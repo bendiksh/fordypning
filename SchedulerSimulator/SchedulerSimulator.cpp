@@ -77,7 +77,7 @@ int main()
 	EDF_BSH SchedBSH;
 
 	// Create a task set
-	/*Task a(1, 10, 130, 20, 0);
+	Task a(1, 10, 130, 20, 0);
 	Task b(2, 20, 40, 20, 0);
 	Task c(3, 40, 70, 20, 0);
 	Task d(4, 50, 110, 20, 0);
@@ -90,16 +90,18 @@ int main()
 	myTasks.addItem(&d);
 	myTasks.addItem(&e);
 
+	/*Task c();
+	Task d();
 	*/
 
 	// Create a model
-	
-	Model tryEDFBSH("NoCheckMissSched", 4, 4, &SchedBSH);
+	/*
+	Model tryEDFBSH("generatedSet1EDFBSH", 4, 4, &SchedBSH);
 
 	tryEDFBSH.setRunTime(500);
-	
+	*/
 
-	//Model tryEDFBSH("createdSet1BSH",&myTasks, &SchedBSH, 500);
+	Model tryEDFBSH("createdSet1BSH",&myTasks, &SchedBSH, 500);
 
 	Simulator mySim;
 

@@ -29,7 +29,7 @@ Task* EDF_BSH::Schedule(double time)
 	{
 		tempTask = availableTaskIterator->CurrentItem();
 		tempDeadline = tempTask->getTarrival() + tempTask->getDeadline() - time;
-		if ((tempDeadline < closestDeadline) && (tempDeadline > 0) && (closestDeadline > 0 ))
+		if (tempDeadline < closestDeadline)
 		{
 			closestDeadline = tempDeadline;
 			bestTask = tempTask;
