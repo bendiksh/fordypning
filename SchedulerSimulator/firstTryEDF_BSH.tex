@@ -1,0 +1,116 @@
+%Simulation of Scheduling in Real-Time Systems
+\documentclass[13pt, a4paper, english]{report}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{ times }
+\usepackage[T1]{fontenc}
+\usepackage{ rtsched }
+\usepackage{ graphicx }
+\usepackage{ xmpmulti }
+\usepackage{ listings }
+\usepackage{ pst - node }
+\usepackage{ amsmath }
+\usepackage{float}
+\begin{document}
+\begin{center}
+\large{Simulation of Scheduling in Real-Time Systems}
+\large{Model: firstTryEDF_BSH }
+\end{center}
+\begin{table}[H]
+\caption{Tasks} 
+\centering
+\begin{tabular}{|c|c|c|c|c|} 
+\hline 
+Task number & Arrival Time & Execution Time & Deadline & Period \\ \hline 
+1&2&69&207&207\\ \hline 
+2&3&137&411&411\\ \hline 
+3&0&82&246&246\\ \hline 
+4&0&18&54&54\\ \hline 
+5&6&69&207&Aperiodic\\ \hline 
+6&0&137&411&Aperiodic\\ \hline 
+7&0&82&246&Aperiodic\\ \hline 
+8&0&18&54&Aperiodic\\ \hline 
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\caption{Average Turnaround Times} 
+\centering
+\begin{tabular}{|c|c|} 
+\hline 
+Task & Average Turnaround Time \\ \hline 
+1 & 139\\ \hline 
+2 &  No Value \\ \hline 
+3 &  No Value \\ \hline 
+4 & 18\\ \hline 
+5 &  No Value \\ \hline 
+6 &  No Value \\ \hline 
+7 &  No Value \\ \hline 
+8 & 36\\ \hline 
+Total Average Turnaround Time &64.3333\\ \hline 
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\caption{Simulation Results in Numbers} 
+\centering
+\begin{tabular}{|c|c|} 
+\hline 
+CPU Idle Time &0\\ \hline 
+Number of Deadlines reached &5\\ \hline 
+Number of Deadlines missed &0\\ \hline 
+Number of Completed tasks &3 \\ \hline 
+Number of Tasks &8\\ \hline 
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\caption{Simulation Results in Percentage} 
+\centering
+\begin{tabular}{|c|c|} 
+\hline 
+CPU Idle Time &0\% \\ \hline 
+Deadlines missed & 0 \% \\ \hline 
+Completed tasks &37.5\% \\ \hline 
+\end{tabular}
+\end{table}
+\def\RTNumberOffset{0}
+\RTGridBegin[height=8cm,width=15cm,numbersize=6]{8}{50}
+\TaskArrival{3}{0}
+\TaskArrival{4}{0}
+\TaskArrival{6}{0}
+\TaskArrival{7}{0}
+\TaskArrival{8}{0}
+\TaskArrival{1}{2}
+\TaskArrival{2}{3}
+\TaskArrival{5}{6}
+\TaskExecution{4}{0}{18}
+\TaskExecution{8}{18}{36}
+\TaskExecution{1}{36}{50}
+\RTGridEnd
+\\ . \\. \\
+\def\RTNumberOffset{50}
+\RTGridBegin[height=8cm,width=15cm,numbersize=6]{8}{50}
+\TaskDeadline{4}{4}
+\TaskDeadline{8}{4}
+\TaskArrival{4}{4}
+\TaskExecution{1}{0}{4}
+\TaskExecution{4}{4}{22}
+\TaskExecution{1}{22}{50}
+\RTGridEnd
+\\ . \\. \\
+\def\RTNumberOffset{100}
+\RTGridBegin[height=8cm,width=15cm,numbersize=6]{8}{50}
+\TaskDeadline{4}{8}
+\TaskArrival{4}{8}
+\TaskExecution{1}{0}{8}
+\TaskExecution{4}{8}{26}
+\TaskExecution{1}{26}{41}
+\TaskExecution{5}{41}{50}
+\RTGridEnd
+\\ . \\. \\
+\def\RTNumberOffset{150}
+\RTGridBegin[height=8cm,width=15cm,numbersize=6]{8}{50}
+\TaskDeadline{4}{12}
+\TaskArrival{4}{12}
+\TaskExecution{5}{0}{50}
+\RTGridEnd
+\\ . \\. \\
+\end{document}
