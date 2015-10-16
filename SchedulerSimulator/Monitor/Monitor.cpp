@@ -520,14 +520,14 @@ double Monitor::numberOfDeadlinesReached()
 				switch (it->CurrentItem().logEventType)
 				{
 				case logFINISHED:
-					if (MissedDeadlinesCounter==0)
-					{
+					//if (MissedDeadlinesCounter==0)
+					//{
 						numberOfDeadlinesReached += 1;
-					}
-					else
+					//}
+					/*else
 					{
 						MissedDeadlinesCounter--;
-					}
+					}*/
 					break;
 				case logDEADLINEMISSED:
 					MissedDeadlinesCounter++;

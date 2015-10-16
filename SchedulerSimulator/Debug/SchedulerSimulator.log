@@ -1,7 +1,7 @@
 ﻿  TaskHandler.cpp
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(37): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(38): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(84): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(37): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(38): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(84): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   Task.cpp
   Simulator.cpp
   Model.cpp
@@ -14,32 +14,33 @@ c:\users\bendiksh\google drive\fordypning\schedulersimulator\simulatorcore\taskh
   SchedulerSimulator.cpp
   Scheduler.cpp
   Monitor.cpp
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(24): warning C4129: '%': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(59): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(76): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(79): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(80): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(81): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(82): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(102): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(105): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(106): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(107): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(108): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(424): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(431): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(435): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(443): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(447): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(457): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(458): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(459): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(460): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(461): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(470): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(473): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(477): warning C4129: '&': unrecognized character escape sequence
-c:\users\bendiksh\google drive\fordypning\schedulersimulator\monitor\monitor.cpp(479): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(24): warning C4129: '%': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(59): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(76): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(79): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(80): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(81): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(82): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(102): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(105): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(106): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(107): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(108): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(424): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(431): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(435): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(443): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(447): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(457): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(458): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(459): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(460): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(461): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(470): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(473): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(477): warning C4129: '&': unrecognized character escape sequence
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\monitor\monitor.cpp(479): warning C4129: '&': unrecognized character escape sequence
   LogEvent.cpp
   Generating Code...
-  SchedulerSimulator.vcxproj -> C:\Users\bendiksh\Google Drive\Fordypning\SchedulerSimulator\Debug\SchedulerSimulator.exe
+  LINK : C:\Users\bendiksh\Documents\GitHub\fordypning\SchedulerSimulator\Debug\SchedulerSimulator.exe not found or not built by the last incremental link; performing full link
+  SchedulerSimulator.vcxproj -> C:\Users\bendiksh\Documents\GitHub\fordypning\SchedulerSimulator\Debug\SchedulerSimulator.exe
