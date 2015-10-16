@@ -42,6 +42,7 @@ int Simulator::runSimulation(Model* myModel)
 		//Update Tasks, and check for deadline misses.
 		simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
 		simModel->modelTaskHandler.checkForDeadlineBreaches(&logMonitor, time);
+		simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
 
 		currentEvent = NextEvent->getEventType();
 
