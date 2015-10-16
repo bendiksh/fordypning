@@ -96,7 +96,7 @@ int main()
 	*/
 
 	
-	Model tryEDFBSH("DeadReachMonitor", 4, 4, &SchedBSH);
+	Model tryEDFBSH("DeadMissAbortTHandler", 4, 4, &SchedBSH);
 
 	tryEDFBSH.setRunTime(500);
 
