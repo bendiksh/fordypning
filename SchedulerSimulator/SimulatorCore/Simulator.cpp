@@ -42,7 +42,7 @@ int Simulator::runSimulation(Model* myModel)
 		//Update Tasks, and check for deadline misses.
 		simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
 		simModel->modelTaskHandler.checkForDeadlineBreaches(&logMonitor, time);
-		simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
+		//simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
 
 		currentEvent = NextEvent->getEventType();
 
@@ -64,6 +64,7 @@ int Simulator::runSimulation(Model* myModel)
 		default:
 			break;
 		}
+
 	}
 	return 1;
 }
@@ -177,7 +178,7 @@ void Simulator::onTaskReady(double time)
 void Simulator::onTaskFinished(double time)
 {
 	currentTask->State = FINISHED;
-	static Event readyTask(TaskReady, time);
+	static Event readyTask(TaskReady, time);	// just to call on "runScheduler"
 	readyTask.setEventTime(time);
 	logMonitor.logEnd(*currentTask, time);
 	eventQueue.addItem(&readyTask);

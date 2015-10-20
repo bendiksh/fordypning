@@ -96,7 +96,7 @@ int main()
 	*/
 
 	
-	Model tryEDFBSH("DeadMissAbortTHandler", 4, 4, &SchedBSH);
+	Model tryEDFBSH("tilbakeTilVanlig", 4, 4, &SchedBSH);
 
 	tryEDFBSH.setRunTime(500);
 
