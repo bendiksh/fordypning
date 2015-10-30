@@ -61,6 +61,9 @@ int Simulator::runSimulation(Model* myModel)
 		case SimulationFinished:
 			onSimulationFinished(time);
 			break;
+		case DeadlineBreach:
+			onDeadlineBreach();
+			break;
 		default:
 			break;
 		}
@@ -204,4 +207,13 @@ void Simulator::resetSimulator()
 {
 	simModel->modelTaskHandler.resetTasks();
 	eventQueue.emptyQueue();
+}
+void Simulator::onDeadlineBreach()
+{
+	currentTask->State = FINISHED;
+	int TDeadBreach = (currentTask->getTarrival() + currentTask->getDeadline());
+	static Event readyTask(TaskReady, TDeadBreach);
+	readyTask.setEventTime(TDeadBreach);
+	logMonitor.logDeadlineBreach(*currentTask, TDeadBreach);
+	eventQueue.addItem(&readyTask);
 }
