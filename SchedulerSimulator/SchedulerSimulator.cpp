@@ -96,7 +96,7 @@ int main()
 	*/
 
 	
-	Model tryEDFBSH("tilbakeTilVanlig", 4, 4, &SchedBSH);
+	Model tryEDFBSH("logBreachInTFinishedFunc2", 4, 4, &SchedBSH);
 
 	tryEDFBSH.setRunTime(500);
 

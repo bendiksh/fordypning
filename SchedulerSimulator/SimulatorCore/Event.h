@@ -7,7 +7,7 @@ happen.
 ************************************************************/
 
 
-enum eventType{ TimeInterrupt, TaskReady, TaskFinished, SimulationFinished, DeadlineBreach };
+enum eventType{ TimeInterrupt, TaskReady, TaskFinished, SimulationFinished, /*DeadlineBreach*/ };
 
 class Event
 {

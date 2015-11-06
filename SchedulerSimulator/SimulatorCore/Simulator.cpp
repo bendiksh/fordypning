@@ -42,7 +42,6 @@ int Simulator::runSimulation(Model* myModel)
 		//Update Tasks, and check for deadline misses.
 		simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
 		simModel->modelTaskHandler.checkForDeadlineBreaches(&logMonitor, time);
-		//simModel->modelTaskHandler.updateTaskStates(&logMonitor, time);
 
 		currentEvent = NextEvent->getEventType();
 
@@ -61,9 +60,9 @@ int Simulator::runSimulation(Model* myModel)
 		case SimulationFinished:
 			onSimulationFinished(time);
 			break;
-		case DeadlineBreach:
+		/*case DeadlineBreach:
 			onDeadlineBreach();
-			break;
+			break;*/
 		default:
 			break;
 		}
@@ -183,7 +182,14 @@ void Simulator::onTaskFinished(double time)
 	currentTask->State = FINISHED;
 	static Event readyTask(TaskReady, time);	// just to call on "runScheduler"
 	readyTask.setEventTime(time);
-	logMonitor.logEnd(*currentTask, time);
+	if(currentTask->DeadlineMissed)
+	{
+		logMonitor.logDeadlineBreach(*currentTask, (currentTask->getTarrival()+currentTask->getDeadline()));
+	}
+	else
+	{
+		logMonitor.logEnd(*currentTask, time);
+	}
 	eventQueue.addItem(&readyTask);
 }
 
@@ -208,7 +214,7 @@ void Simulator::resetSimulator()
 	simModel->modelTaskHandler.resetTasks();
 	eventQueue.emptyQueue();
 }
-void Simulator::onDeadlineBreach()
+/*void Simulator::onDeadlineBreach()
 {
 	currentTask->State = FINISHED;
 	int TDeadBreach = (currentTask->getTarrival() + currentTask->getDeadline());
@@ -216,4 +222,4 @@ void Simulator::onDeadlineBreach()
 	readyTask.setEventTime(TDeadBreach);
 	logMonitor.logDeadlineBreach(*currentTask, TDeadBreach);
 	eventQueue.addItem(&readyTask);
-}
+}*/
