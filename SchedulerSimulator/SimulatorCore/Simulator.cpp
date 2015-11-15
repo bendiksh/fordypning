@@ -164,7 +164,14 @@ void Simulator::setUpTaskForExecution(double time)
 	currentTask->Tstarted = time;
 
 	static Event TaskFin(TaskFinished, (currentTask->getRemainingExecutionTime() + time));
-	TaskFin.setEventTime((currentTask->getRemainingExecutionTime() + time));
+	if ((currentTask->getRemainingExecutionTime() + time) > (currentTask->getDeadline() + currentTask->getTarrival()))
+	{
+		TaskFin.setEventTime((currentTask->getDeadline() + currentTask->getTarrival()));
+	}
+	else
+	{
+		TaskFin.setEventTime((currentTask->getRemainingExecutionTime() + time));
+	}
 	eventQueue.addItem(&TaskFin);
 	currentTaskFinishedEvent = &TaskFin;
 
@@ -188,6 +195,9 @@ void Simulator::onTaskFinished(double time)
 		logMonitor.logDeadlineBreach(*currentTask, deadTime);
 		logMonitor.logPause(*currentTask, deadTime);
 		readyTask.setEventTime(deadTime);
+		static Event timeInter(TimeInterrupt, deadTime);
+		timeInter.setEventTime(deadTime);
+		eventQueue.addItem(&timeInter);
 	}
 	else
 	{

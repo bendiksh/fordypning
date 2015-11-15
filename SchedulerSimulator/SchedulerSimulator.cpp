@@ -96,7 +96,7 @@ int main()
 	*/
 
 	
-	Model tryEDFBSH("logBreachPauseInTFinishedFunc", 4, 4, &SchedBSH);
+	Model tryEDFBSH("logBreachPauseInTFinishedFunc3", 4, 4, &SchedBSH);
 
 	tryEDFBSH.setRunTime(500);
 
