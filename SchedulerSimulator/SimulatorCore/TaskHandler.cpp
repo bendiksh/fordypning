@@ -18,7 +18,7 @@ void TaskHandler::initialize(AbstractIterator<Task*>* taskIt, AbstractIterator<T
 	taskIterator = taskIt;
 }
 
-//Generate taks using normal_distribution 
+//Generate tasks using normal_distribution 
 Set<Task*> TaskHandler::generateTasks(int N, bool PeriodicTasks)
 {
 	//Create a task set:

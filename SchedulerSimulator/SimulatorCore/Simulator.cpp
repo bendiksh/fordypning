@@ -184,7 +184,10 @@ void Simulator::onTaskFinished(double time)
 	readyTask.setEventTime(time);
 	if(currentTask->DeadlineMissed)
 	{
-		logMonitor.logDeadlineBreach(*currentTask, (currentTask->getTarrival()+currentTask->getDeadline()));
+		int deadTime = currentTask->getTarrival() + currentTask->getDeadline();
+		logMonitor.logDeadlineBreach(*currentTask, deadTime);
+		logMonitor.logPause(*currentTask, deadTime);
+		readyTask.setEventTime(deadTime);
 	}
 	else
 	{
