@@ -189,14 +189,15 @@ void Simulator::onTaskFinished(double time)
 	currentTask->State = FINISHED;
 	static Event readyTask(TaskReady, time);	// just to call on "runScheduler"
 	readyTask.setEventTime(time);
-	if(currentTask->DeadlineMissed)
+	if(currentTask->DeadlineMissed)	// need to either catch a miss earlier or check again here
 	{
 		int deadTime = currentTask->getTarrival() + currentTask->getDeadline();
+		int errHandling = 1;		// time penalty for error handling
 		logMonitor.logDeadlineBreach(*currentTask, deadTime);
-		logMonitor.logPause(*currentTask, deadTime);
-		readyTask.setEventTime(deadTime);
-		static Event timeInter(TimeInterrupt, deadTime);
-		timeInter.setEventTime(deadTime);
+		logMonitor.logPause(*currentTask, (deadTime + errHandling));
+		readyTask.setEventTime(deadTime + errHandling);
+		static Event timeInter(TimeInterrupt, (deadTime + errHandling));
+		timeInter.setEventTime(deadTime + errHandling);
 		eventQueue.addItem(&timeInter);
 	}
 	else
