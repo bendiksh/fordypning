@@ -153,7 +153,7 @@ void TaskHandler::checkForDeadlineBreaches(Monitor* myMonitor, double time)
 		tempTask = availableTasksIterator->CurrentItem();
 		if (tempTask->getState() != FINISHED && tempTask->DeadlineMissed == false)
 		{
-			if (time - (tempTask->getTarrival()) > tempTask->getDeadline())
+			if (time - (tempTask->getTarrival()) >= tempTask->getDeadline())
 			{
 				//Deadline missed!
 				//myMonitor->logDeadlineBreach(*tempTask, (tempTask->getTarrival() + tempTask->getDeadline()));

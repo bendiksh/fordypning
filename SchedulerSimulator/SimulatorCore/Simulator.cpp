@@ -186,6 +186,8 @@ void Simulator::onTaskReady(double time)
 
 void Simulator::onTaskFinished(double time)
 {
+	//simModel->modelTaskHandler.checkForDeadlineBreaches(&logMonitor, (time + 1));
+	
 	currentTask->State = FINISHED;
 	static Event readyTask(TaskReady, time);	// just to call on "runScheduler"
 	readyTask.setEventTime(time);

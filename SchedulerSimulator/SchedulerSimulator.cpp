@@ -96,7 +96,7 @@ int main()
 	*/
 
 	
-	Model tryEDFBSH("ErrHandlingPenalty", 4, 4, &SchedBSH);
+	Model tryEDFBSH("ErrHandlingPenaltyRecheckBreach2", 4, 4, &SchedBSH);
 
 	tryEDFBSH.setRunTime(500);
 

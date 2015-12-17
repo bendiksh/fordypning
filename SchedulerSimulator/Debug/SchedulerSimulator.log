@@ -1,2 +1,9 @@
-﻿  SchedulerSimulator.cpp
+﻿  TaskHandler.cpp
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(37): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(38): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\taskhandler.cpp(84): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Simulator.cpp
+c:\users\bendiksh\documents\github\fordypning\schedulersimulator\simulatorcore\simulator.cpp(196): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  SchedulerSimulator.cpp
+  Generating Code...
   SchedulerSimulator.vcxproj -> C:\Users\bendiksh\Documents\GitHub\fordypning\SchedulerSimulator\Debug\SchedulerSimulator.exe
